@@ -218,4 +218,55 @@ input::placeholder {
     height: 613px;
     background-position-y:-51px;
     
-}    
+}
+.hot_deal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 98px;
+}
+.hot_deal_pair {
+    display: flex;
+    flex-direction: column;    
+}
+.dealman {
+    background-image: url(img/dealman.jpg);
+    width: 560px;
+    height: 542px;
+    display: flex;
+}
+.dealaccesories {
+    background-image: url(img/dealaccesories.jpg);
+    width: 560px;
+    height: 261px;
+    margin-top: 20px;
+    display: flex;
+}
+.dealwoomen {
+    background-image: url(img/dealwoomen.jpg);
+    width: 560px;
+    height: 261px;
+    display: flex;
+}
+.dealkid {
+    background-image: url(img/dealkid.jpg);
+    width: 560px;
+    height: 542px;
+    margin-top: 20px;
+    display: flex;
+}
+.hot_text {
+    color: #222222;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    background-color: #ffffff;
+    margin-top: 25px;
+    padding: 10px 20px;
+}
+.hot_text span {
+    color: #f16d7f;
+    font-size: 30px;
+    letter-spacing: 0.75px;
+}
