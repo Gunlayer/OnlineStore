@@ -66,8 +66,58 @@ body {
     height: 38px;
     padding-left: 15px;
     box-sizing: border-box;
+    position: relative;
+    cursor: pointer;    
 }
-.top_button_left::after {
+.top_drop_menu {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    position: absolute;
+    top: 35px;
+    left: -1px;      
+}
+.triangle {
+    position: absolute;
+    background-color: #ffffff;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    top: -5px;
+    left: 68px;
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    
+}
+.top_drop_title {
+    color: #232323;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: normal;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    width: 235px;
+}
+.top_drop_links {
+    display: block;
+    text-decoration: none;
+    color: #4f4f4f;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    line-height: 32px;
+}
+.top_drop_links:hover {
+    color: #f16d7f;
+}
+.top_button_left summary {
+    list-style-type: none;
+}
+summary::after {
     content: "\f0d7";
     font-family: FontAwesome;
     color: #222222;
@@ -170,20 +220,16 @@ input::placeholder {
     font-family: Lato;
     font-size: 14px;
     font-weight: 700;
-    font-style: normal;
-    letter-spacing: normal;
     padding: 19px 20px 22px 20px;
     display: inline-block;   
+}
+.elements_menu:hover {
+    color: #f16d7f;
 }    
 .header_bottom {
-    
-    background-color: #e8e8e8;
-   
-    
+    background-color: #e8e8e8;    
 }
-.brand_left {
-    display: flex;
-}
+
 .brand_title {
        
     color: #222222;
@@ -192,18 +238,19 @@ input::placeholder {
     font-weight: 900;
     letter-spacing: 1.5px;
     padding-top: 224px;
-    box-sizing: border-box;
+    line-height: 50px;   
     
 }
-.lux {  
+.lux {
     letter-spacing: 1px;
     color: #222222;
     font-size: 40px;
 }
+
 .fashion {
     color: #f16d7f;
     font-size: 40px;
-    letter-spacing: 1px;    
+    letter-spacing: 1px;     
 }
 .vertical_line {
     width: 12px;
@@ -228,6 +275,10 @@ input::placeholder {
     display: flex;
     flex-direction: column;    
 }
+.hot_deal_pair a {
+    text-decoration: none;
+}
+
 .dealman {
     background-image: url(img/dealman.jpg);
     width: 560px;
