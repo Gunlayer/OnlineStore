@@ -185,8 +185,7 @@ input::placeholder {
     text-decoration: none;
     line-height: 37px;
     padding-left: 19px;
-    box-sizing: border-box;
-    
+    border: #f16d7f;  
 }
 .top_button_right::after {
     content: "\f0d7";
@@ -194,9 +193,16 @@ input::placeholder {
     color: #ffffff;
     font-size: 14px;
     margin-left: 8px;
-    margin-right: 12px;
-    
+    margin-right: 12px;    
 }
+.top_button_right:hover {
+    color: #f16d7f;
+    background-color: #fff;    
+}
+.top_button_right:hover::after {
+    color: #f16d7f;
+}
+
 .line {
     height: 1px;
     background-color: #ececec;
@@ -347,9 +353,13 @@ h2 {
 .card {
     width: 261px;
 }
+
 .link_card {
     text-decoration: none;
     margin-bottom: 39px;
+}
+.link_card:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 .title_card {
     color: #222222;
@@ -367,8 +377,11 @@ h2 {
     text-transform: uppercase;
     margin: 0 0 21px 15px; 
 }
-.browse {
+.button_middle {
     display: flex;
+    justify-content: center;
+    margin-bottom: 113px;
+    margin-top: 20px;
 }
 .all_product {
     text-decoration: none;    
@@ -379,6 +392,77 @@ h2 {
     letter-spacing: 0.4px;
     padding: 18px 0 18px 24px;
     background-color: #f16d7f;
-    display: block;
-    text-align: center;   
+    border: 1px solid #f16d7f;      
 }
+.all_product::after {
+    content: "\f30b";
+    font-family: FontAwesome;
+    color: #ffffff;
+    padding-left: 9px;
+    padding-right: 19px;
+}
+.all_product:hover {
+    border: 1px solid #f16d7f;
+    background-color: #ffffff;
+    color: #f16d7f;
+    
+}
+.all_product:hover::after {
+    color: #f16d7f;
+}
+.banner {
+    display: flex;
+    height: 529px;
+}
+.banner_left {
+    position: relative;
+    
+}
+.banner_bord {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.banner_bord span {
+    color:#f16d7f;
+}
+.banner_bord p {
+    font-size: 32px;
+    letter-spacing: 0.9px;
+}
+.banner_right {
+    padding: 48px 43px;
+    background-color: #222224;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.banner_right_title {
+    color: #fbfbfb;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 17px;
+}
+.banner_text {
+    color: #fbfbfb;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    
+    text-align: left;
+}
+.banner_right_wraper {
+    display: flex;
+    align-items: flex-start;    
+}
+.banner_right_description {
+    margin-left: 30px;
+}
+
