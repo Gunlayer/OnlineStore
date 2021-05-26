@@ -75,7 +75,7 @@ body {
     border: 1px solid #e6e6e6;
     border-radius: 5px;
     position: absolute;
-    top: 35px;
+    top: 36px;
     left: -1px;      
 }
 .triangle {
@@ -130,17 +130,16 @@ summary::after {
 .top_form {     
     display: flex;
 }
-input {
+.search_input {
     width: 280px;
     height: 38px;
     padding-left: 15px;
     border: 1px solid #e6e6e6;
     box-sizing: border-box;
-    outline: none;
-    
+    outline: none;    
     color: #9E9C9C;
 }
-button {    
+.search_submit {    
     width: 38px;
     height: 38px;
     border: none;    
@@ -150,7 +149,7 @@ button {
     border: 1px solid #e6e6e6;
     border-left:none;
 }
-button:before {
+.search_submit:before {
     content: "\f002";
     font-family: FontAwesome;
     font-size: 14px;
@@ -158,7 +157,7 @@ button:before {
     font-style: normal;
     letter-spacing: normal;
 }
-input::placeholder {
+.search_input::placeholder {
     color: #a4a4a4;
     font-family: Lato;
     font-size: 14px;
@@ -185,7 +184,7 @@ input::placeholder {
     text-decoration: none;
     line-height: 37px;
     padding-left: 19px;
-    border: #f16d7f;  
+    border: 1px solid #f16d7f;  
 }
 .top_button_right::after {
     content: "\f0d7";
@@ -465,4 +464,115 @@ h2 {
 .banner_right_description {
     margin-left: 30px;
 }
+.subscribe {
+    background-image: url(img/backreview.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 438px;
+    margin-top: 97px;
+    
+}
+.subscribe_block {
+    display: flex;
+}
+.subscribe_left_block {
+    padding-top: 123px;
+    display: flex;
+    align-items: flex-start;
+    width: 570px;
 
+    
+}
+.review {
+    color: #222224;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: normal;
+    margin-left: 28px;
+    max-width: 386px;
+}
+.name_review {
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: #f16d7f;
+    margin-top: 20px;
+}
+.city_review {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+.middle_line {
+    width: 1px;
+    background-color: #fff;
+    height: 438px;    
+}
+.review_line_box {
+    width: 140px;
+    height: 4px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.review_line {
+    width: 38px;
+    background-color: #d6d6d6;
+}
+.review_line_marked {
+    width: 38px;
+    background-color: #f16d7f;
+}
+
+.subscribe_right_block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 148px;
+    width: 570px;
+    
+    
+}
+.subscribe_title {
+    color: #222224;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    
+}
+.subscribe_text {
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+.subscribe_form {
+    display: flex;
+    margin-top: 35px;
+}
+.input_email {
+    border-radius: 23px 0 0 23px;
+    background-color: #e1e1e1;
+    border: none;
+    padding: 18px 0 18px 28px;
+    outline: 0;
+    width: 250px;
+}
+.input_submit {
+    border-radius: 0 23px 23px 0;
+    border: 1px solid #f16d7f;
+    background-color: #f16d7f;
+    padding: 0 21px;
+    color: #fff;
+    font-size: 14px;
+    font-family: Lato;
+    letter-spacing: 0.35px;
+}
+.input_submit:hover {
+    background-color: #e1e1e1;
+    color: #f16d7f;
+}
