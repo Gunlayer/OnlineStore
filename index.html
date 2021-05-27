@@ -13,14 +13,14 @@
 </head>
 
 <body>
-    <div class="header_top container">
+    <header class="header_top container">
         <div class="header_top_left">
             <a href="#" class="logo">
                 <img src="img/logo.png" alt="logo" class="img_logo">
                 <p class="text_logo">BRAN<span class="d">D</span></p>
             </a>
             <details class="top_button_left">
-                <summary>Browse</summary>
+                <summary class="browse_summary">Browse</summary>
                 <div class="top_drop_menu">
                     <div class="triangle"></div>
                     <h3 class="top_drop_title">women</h3>
@@ -41,15 +41,68 @@
             </form>
         </div>
         <div class="header_top_right">
-            <img src="img/cart.svg" alt="cart" class="cart_img">
+            <details class="drop_cart_details">
+                <summary class="cart_summary"><img src="img/cart.svg" alt="cart" class="cart_img"></summary>
+                <div class="drop_cart">
+                    <div class="good_container">
+                        <img src="img/cart_img1.jpg" alt="good" class="cart_img_add">
+                        <div class="description_container">
+                            <div class="description_good">
+                                <p class="title_good">Rebox Zane</p>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <p class="good_price">1  <span>x</span>  $250</p>
+                            </div>
+                            <div class="cross_button_container">
+                                <a href="#" class="cross_button"><i class="fas fa-times-circle"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="good_container">
+                        <img src="img/cart_img1.jpg" alt="good" class="cart_img_add">
+                        <div class="description_container">
+                            <div class="description_good">
+                                <p class="title_good">Rebox Zane</p>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <p class="good_price">1  <span>x</span>  $250</p>
+                            </div>
+                            <div class="cross_button_container">
+                                <a href="#" class="cross_button"><i class="fas fa-times-circle"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price_block">
+                        <p>TOTAL</p>
+                        <p>$500</p>
+                    </div>
+                    <a href="#" class="drop_card_button">Checkout</a>
+                    <a href="#" class="drop_card_button">Go to cart</a>
+                </div>
+
+            </details>
             <a href="#" class="top_button_right">My Account</a>
         </div>
-    </div>
+    </header>
     <div class="line"></div>
     <nav class="container_menu">
         <ul class="header_menu">
             <li class="menu_list"><a href="#" class="elements_menu">HOME</a></li>
             <li class="menu_list"><a href="#" class="elements_menu">MAN</a>
+                <div class="pop_up_menu">
+                    <div class="container_pop_up_menu">
+                        <h3 class="pup_up_title">Man</h3>
+                        <a href="#" class="pop_up_links">Dresses</a>
+                        <a href="#" class="pop_up_links">Tops</a>
+                        <a href="#" class="pop_up_links">Sweaters/Knits</a>
+                        <a href="#" class="pop_up_links">Jackets/Coats</a>
+                        <a href="#" class="pop_up_links">Blazers</a>
+                        <a href="#" class="pop_up_links">Denim</a>
+                        <a href="#" class="pop_up_links">Leggings/Pants</a>
+                        <a href="#" class="pop_up_links">Skirts/Shorts</a>
+                        <a href="#" class="pop_up_links">Accessories</a>
+                    </div>
+                </div>
+            </li>
+            <li class="menu_list"><a href="#" class="elements_menu">WOMEN</a>
                 <div class="pop_up_menu">
                     <div class="container_pop_up_menu">
                         <h3 class="pup_up_title">Women</h3>
@@ -65,7 +118,6 @@
                     </div>
                 </div>
             </li>
-            <li class="menu_list"><a href="#" class="elements_menu">WOMEN</a></li>
             <li class="menu_list"><a href="#" class="elements_menu">KIDS</a></li>
             <li class="menu_list"><a href="#" class="elements_menu">ACCOSERIESE</a></li>
             <li class="menu_list"><a href="#" class="elements_menu">FEATURED</a></li>

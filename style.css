@@ -114,10 +114,10 @@ body {
 .top_drop_links:hover {
     color: #f16d7f;
 }
-.top_button_left summary {
+.browse_summary {
     list-style-type: none;
 }
-summary::after {
+.browse_summary::after {
     content: "\f0d7";
     font-family: FontAwesome;
     color: #222222;
@@ -201,6 +201,120 @@ summary::after {
 .top_button_right:hover::after {
     color: #f16d7f;
 }
+.drop_cart_details {
+    position: relative;
+}
+.drop_cart {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+    position: absolute; 
+    top: 45px;
+    left: -20px; 
+}
+.drop_cart::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    border-left: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    top: -6px;
+    left: 31px;
+}
+.good_container {
+    display: flex;
+    width: 230px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ededed;
+}
+.good_container:last-of-type {
+    margin-bottom: 0;
+}
+.description_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.description_good {
+    margin-left: 15px;
+    padding-top: 10px;
+}
+.title_good {
+    color: #222222;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.fa-star {
+    color: #e4af48;
+    font-size: 12px;
+}
+.fa-star-half-alt {
+    color: #e4af48;
+    font-size: 12px;
+}
+.good_price {
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.good_price span {
+    font-size: 10px;
+}
+.fa-times-circle {
+    color: #c0c0c0;
+    font-size: 16px;
+    display: block;
+}
+.cross_button_container {
+    display: flex;
+    align-items: center;
+}
+.cross_button {
+    text-decoration: none;
+}
+.cart_summary {
+    list-style-type: none;
+}
+.fa-times-circle:hover {
+    color: #f16d7f;
+}
+.price_block {
+    display: flex;
+    justify-content: space-between;
+    color: #222222;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.drop_card_button {
+    display: flex;
+    color: #4a4a4a;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    padding: 19px 0;
+    border: 1px solid #eaeaea;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 11px;
+    justify-content: center;
+}
+.drop_card_button:hover {
+    color: #f16d7f;
+    border: 1px solid #f16d7f;
+}
 
 .line {
     height: 1px;
@@ -242,10 +356,24 @@ summary::after {
 .pop_up_menu {
     display: none;
     position: absolute;
+    top: 51px;
     border-radius: 5px;
     background-color: #ffffff;
     border: 1px solid #e8e8e8;
     padding: 20px 25px;
+}
+.pop_up_menu::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 30px;
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    transform: rotate(45deg);
 }
 .container_pop_up_menu {
     
