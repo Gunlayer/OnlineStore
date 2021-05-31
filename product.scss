@@ -1,0 +1,63 @@
+.menu_list_in {
+    border-bottom: 3px solid #ef5b70;
+}
+@import "mixin.scss";
+@import "var.scss";
+
+.accordion_title {
+    @include font-basic (lato, 14px, #6f6e6e);
+    font-weight: 700;
+    list-style-type: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.category {
+    @include font-basic (lato,14px,#6f6e6e);
+    width:243px;
+    margin-top: 18px;    
+    a {
+        text-decoration: none;
+        color: #6f6e6e;
+        display: block;
+    }
+    a:hover {
+        color: $color-red;
+    }
+}
+.category:first-child {
+    margin-top: 0;
+}
+.accordion_title::after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    color: #6f6e6e;
+}
+.accordion_title_container {
+    display: flex;
+    align-items: center;
+}
+.accordion_title_container div{
+    width: 5px;
+    height: 37px;
+    background-color: $color-red;
+    margin-right: 11px;    
+}
+.accarion_list {
+    padding-left: 16px;
+    line-height: 33px;
+}
+.category[open] .accordion_title::after {
+    content: "\f0d8";
+    font-family: FontAwesome;
+    color: $color-red;
+}
+.category[open] .accordion_title {
+    color: $color-red;
+}

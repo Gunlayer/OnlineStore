@@ -1,0 +1,61 @@
+.menu_list_in {
+  border-bottom: 3px solid #ef5b70; }
+
+.accordion_title {
+  font-family: lato;
+  font-size: 14px;
+  color: #6f6e6e;
+  font-weight: 700;
+  list-style-type: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  outline: none; }
+
+.category {
+  font-family: lato;
+  font-size: 14px;
+  color: #6f6e6e;
+  width: 243px;
+  margin-top: 18px; }
+  .category a {
+    text-decoration: none;
+    color: #6f6e6e;
+    display: block; }
+  .category a:hover {
+    color: #ef5b70; }
+
+.category:first-child {
+  margin-top: 0; }
+
+.accordion_title::after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  color: #6f6e6e; }
+
+.accordion_title_container {
+  display: flex;
+  align-items: center; }
+
+.accordion_title_container div {
+  width: 5px;
+  height: 37px;
+  background-color: #ef5b70;
+  margin-right: 11px; }
+
+.accarion_list {
+  padding-left: 16px;
+  line-height: 33px; }
+
+.category[open] .accordion_title::after {
+  content: "\f0d8";
+  font-family: FontAwesome;
+  color: #ef5b70; }
+
+.category[open] .accordion_title {
+  color: #ef5b70; }
+
+/*# sourceMappingURL=product.css.map */
