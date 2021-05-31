@@ -137,66 +137,174 @@
         </div>
     </div>
     <div class="container">
-        <div class="accordion">
-            <details class="category">
-                <summary class="accordion_title">
-                    <div class="accordion_title_container">
-                        <div></div>
-                        <p>Category</p>
-                    </div> 
-                </summary>
-                <div class="accarion_list">
-                    <a href="#">Accessories</a>
-                    <a href="#">Bags</a>
-                    <a href="#">Denim</a>
-                    <a href="#">Denim</a>
-                    <a href="#">Hoodies & Sweatshirts</a>
-                    <a href="#">Jackets & Coats</a>
-                    <a href="#">Pants</a>
-                    <a href="#">Polos</a>
-                    <a href="#">Shirts</a>
-                    <a href="#">Shoes</a>
-                    <a href="#">Shorts</a>
-                    <a href="#">Sweaters & Knits</a>
-                    <a href="#">T-Shirts</a>
-                    <a href="#">Tanks</a>                    
-                </div>
-            </details>
-            <details class="category">
-                <summary class="accordion_title">
-                    <div class="accordion_title_container">
-                        <div></div>
-                        <p>Brand</p>
-                    </div> 
-                </summary>
-                <div class="accarion_list">
-                    <a href="#">Lacoste</a>
-                    <a href="#">United Colors of Benetton</a>
-                    <a href="#">Tommy Hilfiger</a>
-                    <a href="#">Under Armour</a>
-                    <a href="#">Reebok</a>
-                    <a href="#">Adidas</a>
-                    <a href="#">Puma</a>
-                </div>
-            </details> 
-            <details class="category">
-                <summary class="accordion_title">
-                    <div class="accordion_title_container">
-                        <div></div>
-                        <p>Designer</p>
-                    </div> 
-                </summary>
-                <div class="accarion_list">
-                    <a href="#">Giorgio Armani</a>
-                    <a href="#">Guccio Gucci</a>
-                    <a href="#">Tommy Hilfiger</a>
-                    <a href="#">Pierre Cardin</a>
-                </div>
-            </details>             
-        </div>
         <div class="product_container">
-
+            <div class="accordion">
+                <details class="category">
+                    <summary class="accordion_title">
+                        <div class="accordion_title_container">
+                            <div></div>
+                            <p>Category</p>
+                        </div>
+                    </summary>
+                    <div class="accarion_list">
+                        <a href="#">Accessories</a>
+                        <a href="#">Bags</a>
+                        <a href="#">Denim</a>
+                        <a href="#">Denim</a>
+                        <a href="#">Hoodies & Sweatshirts</a>
+                        <a href="#">Jackets & Coats</a>
+                        <a href="#">Pants</a>
+                        <a href="#">Polos</a>
+                        <a href="#">Shirts</a>
+                        <a href="#">Shoes</a>
+                        <a href="#">Shorts</a>
+                        <a href="#">Sweaters & Knits</a>
+                        <a href="#">T-Shirts</a>
+                        <a href="#">Tanks</a>
+                    </div>
+                </details>
+                <details class="category">
+                    <summary class="accordion_title">
+                        <div class="accordion_title_container">
+                            <div></div>
+                            <p>Brand</p>
+                        </div>
+                    </summary>
+                    <div class="accarion_list">
+                        <a href="#">Lacoste</a>
+                        <a href="#">United Colors of Benetton</a>
+                        <a href="#">Tommy Hilfiger</a>
+                        <a href="#">Under Armour</a>
+                        <a href="#">Reebok</a>
+                        <a href="#">Adidas</a>
+                        <a href="#">Puma</a>
+                    </div>
+                </details>
+                <details class="category">
+                    <summary class="accordion_title">
+                        <div class="accordion_title_container">
+                            <div></div>
+                            <p>Designer</p>
+                        </div>
+                    </summary>
+                    <div class="accarion_list">
+                        <a href="#">Giorgio Armani</a>
+                        <a href="#">Guccio Gucci</a>
+                        <a href="#">Tommy Hilfiger</a>
+                        <a href="#">Pierre Cardin</a>
+                    </div>
+                </details>
+            </div>
+            <form oninput="result.value=(range.value)" action="#" class="product_form">
+                <div class="form_header">
+                    <div class="check_container">
+                        <h3 class="check_title">
+                            Trending now
+                        </h3>
+                        <div>
+                            <input id="tr1" type="checkbox" class="check_input">
+                            <label for="tr1" class="check_text">
+                                Bohemian
+                            </label>
+                            <input id="tr2" type="checkbox" class="check_input">
+                            <label for="tr2" class="check_text">
+                                Floral
+                            </label>
+                            <input id="tr3" type="checkbox" class="check_input">
+                            <label for="tr3" class="check_text">
+                                Lace
+                            </label>
+                        </div>
+                        <div>
+                            <input id="tr4" type="checkbox" class="check_input">
+                            <label for="tr4" class="check_text">
+                                Floral
+                            </label>
+                            <input id="tr5" type="checkbox" class="check_input">
+                            <label for="tr5" class="check_text">
+                                Lace
+                            </label>
+                            <input id="tr6" type="checkbox" class="check_input">
+                            <label for="tr6" class="check_text">
+                                Bohemian
+                            </label>
+                        </div>
+                    </div>
+                    <div class="check_container input_show">
+                        <h3 class="check_title">
+                            Size
+                        </h3>
+                        <div class="check_wrapper">
+                            <div class="pair_checkbox">
+                                <div class="one_checkbox">
+                                    <input id="s1" type="checkbox" class="check_input">
+                                    <label for="s1" class="check_text size_text">
+                                        XXS
+                                    </label>
+                                </div>
+                                <div class="one_checkbox">
+                                    <input id="s2" type="checkbox" class="check_input">
+                                    <label for="s2" class="check_text size_text">
+                                        L
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <div class="pair_checkbox">
+                                <div class="one_checkbox">
+                                    <input id="s3" type="checkbox" class="check_input">
+                                    <label for="s3" class="check_text size_text">
+                                        XS
+                                    </label>
+                                </div>
+                                <div class="one_checkbox">
+                                    <input id="s4" type="checkbox" class="check_input">
+                                    <label for="s4" class="check_text size_text">
+                                        XL
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="pair_checkbox">
+                                <div class="one_checkbox">
+                                    <input id="s5" type="checkbox" class="check_input">
+                                    <label for="s5" class="check_text size_text">
+                                        S
+                                    </label>
+                                </div>
+                                <div class="one_checkbox">
+                                    <input id="s6" type="checkbox" class="check_input">
+                                    <label for="s6" class="check_text size_text">
+                                        XXL
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="pair_checkbox">
+                                <div class="one_checkbox">
+                                    <input id="s7" type="checkbox" class="check_input">
+                                    <label for="s7" class="check_text size_text">
+                                        M
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check_container">
+                        <h3 class="check_title">
+                            pRICE
+                        </h3>
+                        <input id="range" type="range" value="100" step="1" max="500" />
+                        <div class="range_values">
+                            <p>$0</p>
+                            <p>$
+                                <output name="result" for="range">100</output>
+                            </p>
+                        </div>
+                    </div>
+                </div>
         </div>
+    </div>
+    </form>
+    </div>
     </div>
 
 </body>

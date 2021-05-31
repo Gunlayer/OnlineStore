@@ -1,6 +1,11 @@
 .menu_list_in {
   border-bottom: 3px solid #ef5b70; }
 
+.product_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px; }
+
 .accordion_title {
   font-family: lato;
   font-size: 14px;
@@ -57,5 +62,122 @@
 
 .category[open] .accordion_title {
   color: #ef5b70; }
+
+.product_form {
+  display: flex; }
+
+.check_container {
+  width: 263px; }
+
+.check_title {
+  font-family: lato;
+  font-size: 14px;
+  color: #6f6e6e;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+
+.check_text {
+  font-family: lato;
+  font-size: 14px;
+  color: #6f6e6e;
+  cursor: pointer;
+  line-height: 26px;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #dfdfdf; }
+
+.check_text:last-child {
+  content: none;
+  border-right: none;
+  padding-right: 0;
+  margin-right: 0; }
+
+.check_input {
+  display: none; }
+
+.check_input:checked + .check_text {
+  color: #ef5b70; }
+
+.input_show .check_text {
+  padding-right: 0;
+  margin-right: 0;
+  border-right: none;
+  display: block; }
+
+.one_checkbox {
+  display: flex;
+  align-items: center; }
+
+.pair_checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px; }
+
+.check_wrapper {
+  display: flex; }
+
+.check_input:checked + .size_text {
+  color: #ef5b70; }
+
+.size_text::before {
+  content: "\f0c8";
+  font-family: FontAwesome;
+  color: #ebebeb;
+  margin-right: 10px; }
+
+.check_input:checked ~ .size_text::before {
+  content: "\f14a";
+  font-family: FontAwesome;
+  color: #ef5b70;
+  margin-right: 10px; }
+
+input[type=range] {
+  width: 263px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  overflow: hidden;
+  height: 7px; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 7px;
+  background-color: #f0f0f0; }
+
+input[type=range]::-webkit-slider-thumb {
+  background: #ef5b70;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  -webkit-appearance: none;
+  margin-top: -4px;
+  box-shadow: -200px 0 0 200px #ef5b70; }
+
+input[type=range]::-moz-range-track {
+  height: 7px;
+  background-color: #f0f0f0; }
+
+input[type=range]::-moz-range-thumb {
+  background: #ef5b70;
+  cursor: pointer;
+  height: 7px;
+  border-radius: 0px;
+  box-shadow: -200px 0px 0px 200px #ef5b70;
+  padding: 0px;
+  margin: 0px; }
+
+.range_values {
+  font-family: lato;
+  font-size: 14px;
+  color: #6f6e6e;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px; }
+
+.form_header {
+  display: flex;
+  justify-content: space-between;
+  width: 846px; }
 
 /*# sourceMappingURL=product.css.map */
