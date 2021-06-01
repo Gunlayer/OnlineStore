@@ -76,7 +76,8 @@ body {
     border-radius: 5px;
     position: absolute;
     top: 36px;
-    left: -1px;      
+    left: -1px;
+    z-index: 100;      
 }
 .triangle {
     position: absolute;
@@ -622,6 +623,7 @@ body {
 .banner {
     display: flex;
     height: 529px;
+    margin-bottom: 97px;
 }
 .banner_left {
     position: relative;
@@ -678,10 +680,7 @@ body {
     background-image: url(img/backreview.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    height: 438px;
-    margin-top: 97px;
-    
-    
+    height: 438px;  
 }
 .subscribe_block {
     display: flex;
