@@ -348,6 +348,7 @@ body {
 }
 .menu_list:hover .pop_up_menu {
     display: flex;
+    z-index: 50;
 }  
  
 
@@ -1065,3 +1066,4 @@ input[type=number] {
 }  
 @import "mixin.scss";
 @import "product.scss";
+@import "checkout.scss";
