@@ -221,7 +221,8 @@ body {
           align-items: center; }
 
 .cart_img {
-  margin-right: 25px; }
+  margin-right: 25px;
+  cursor: pointer; }
 
 .top_button_right {
   color: #ffffff;

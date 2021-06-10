@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/46da42a676.js" crossorigin="anonymous"></script>
-    <title>Cart</title>
+    <title>Product</title>
 </head>
 
 <body>
@@ -136,122 +136,263 @@
             </div>
         </div>
     </section>
-    <section class="container shipping_cart">
-        <form action="">
-            <div class="title_box">
-                <div class="title_details">
-                    <p>Product Details</p>
-                </div>
-                <div class="title_rest">
-                    <p>unite Price</p>
-                    <p>Quantity</p>
-                    <p>shipping</p>
-                    <p>Subtotal</p>
-                    <p>ACTION</p>
-                </div>
-            </div>
-            <div class="product_box">
-                <div class="product_details">
-                    <img src="img/product1.jpg" alt="photo">
-                    <div>
-                        <h4>Mango People T-shirt</h4>
-                        <p>Color:&nbsp;&nbsp;&nbsp;<span>Red</span></p>
-                        <p>Size:&nbsp;&nbsp;&nbsp;<span>XXL</span></p>
-                    </div>
-                </div>
-                <div class="product_rest">
-                    <div class="unit-price">$150</div>
-                    <div class="quantity">
-                        <input type="number" min="1" value="2">
-                    </div>
-                    <div class="shipping">FREE</div>
-                    <div class="subtotal">$300</div>
-                    <div class="action"><i class="fas fa-times-circle"></i></div>
-                </div>
-            </div>
-            <div class="product_box">
-                <div class="product_details">
-                    <img src="img/product2.jpg" alt="photo">
-                    <div>
-                        <h4>Mango People T-shirt</h4>
-                        <p>Color:&nbsp;&nbsp;&nbsp;<span>Red</span></p>
-                        <p>Size:&nbsp;&nbsp;&nbsp;<span>XXL</span></p>
-                    </div>
-                </div>
-                <div class="product_rest">
-                    <div class="unit-price">$150</div>
-                    <div class="quantity">
-                        <input type="number" min="1" value="2">
-                    </div>
-                    <div class="shipping">FREE</div>
-                    <div class="subtotal">$300</div>
-                    <div class="action"><i class="fas fa-times-circle"></i></div>
-                </div>
-            </div>
-            <div class="product_box">
-                <div class="product_details">
-                    <img src="img/product3.jpg" alt="photo">
-                    <div>
-                        <h4>Mango People T-shirt</h4>
-                        <p>Color:&nbsp;&nbsp;&nbsp;<span>Red</span></p>
-                        <p>Size:&nbsp;&nbsp;&nbsp;<span>XXL</span></p>
-                    </div>
-                </div>
-                <div class="product_rest">
-                    <div class="unit-price">$150</div>
-                    <div class="quantity">
-                        <input type="number" min="1" value="2">
-                    </div>
-                    <div class="shipping">FREE</div>
-                    <div class="subtotal">$300</div>
-                    <div class="action"><i class="fas fa-times-circle"></i></div>
-                </div>
-            </div>
-            <div class="shopping_cart_button">
-                <a href="#">cLEAR SHOPPING CART</a>
-                <a href="#">cONTINUE sHOPPING</a>
-            </div>
-            <div class="shipping_form">
-                <div class="shipping_form_container">
-                    <h2 class="shipping_title shipping_form_container__mb22">
-                        Shipping Adress
-                    </h2>
-                    <input list="country" placeholder="Bangladesh">
-                    <datalist id="country">
-                        <option value="Bangladesh"></option>
-                        <option value="Russian federation"></option>
-                        <option value="Moldova"></option>
-                        <option value="France"></option>
-                        <option value="United Kindom"></option>
-                        <option value="Monaco"></option>
-                    </datalist>
-                    <input type="text" placeholder="State">
-                    <input type="text" placeholder="Postcode / Zip">
-                    <a href="#" class="shipping_small_button">get a quote</a>
-                </div>
-                <div class="shipping_form_container">
-                    <h4 class="shipping_title shipping_form_container__mb22">
-                        coupon discount
+    <div class="container">
+        <details class="chekout_category">
+            <summary>
+                <p>01.&nbsp;&nbsp;&nbsp;shipping adress</p>
+            </summary>
+            <div class="checkout_container">
+                <form action="" class="check_switch">
+                    <h4>
+                        Check as a guest or register
                     </h4>
-                    <p class="shipping_text">Enter your coupon code if you have one</p>
-                    <input type="text" placeholder="State">
-                    <a href="#" class="shipping_small_button">Apply coupon</a>
-                </div>
-                <div class="shipping_form_container shipping_form_container_bg_grey">
+                    <p>Register with us for future convenience</p>
                     <div>
-                        <p class="shipping_text shipping_text__total">Sub
-                            total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>$900</span></p>
-                        <h4 class="shipping_title shipping_title_align_right">GRAND
-                            TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="span_red">$900</span></h4>
+                        <input type="radio" name="switch" id="switch1">
+                        <label for="switch1">checkout as guest</label>
                     </div>
-                    <button type="submit" class="shipping_big_button">proceed to checkout</button>
-                </div>
+                    <div>
+                        <input type="radio" name="switch" id="switch2">
+                        <label for="switch2">register</label>
+                    </div>
+                    <h4>
+                        register and save time!
+                    </h4>
+                    <p>Register with us for future convenience</p>
+                    <p class="marked_text">Fast and easy checkout</p>
+                    <p class="marked_text">Easy access to your order history and status</p>
+                    <button type="submit">Continue</button>
+                </form>
+                <form action="" class="check_register">
+                    <h4>Already registed?</h4>
+                    <p>Please log in below</p>
+                    <h5>EMAIL ADDRESS<span> *</span></h5>
+                    <input type="email">
+                    <h5>PASSWORD<span> *</span></h5>
+                    <input type="password">
+                    <span>* Required Fileds</span>
+                    <div>
+                        <button>Log in</button>
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    
+                </form>
             </div>
-        </form>
-    </section>
-    <section class="subscribe sub_single">
+        </details>
+        <details class="chekout_category">
+            <summary>
+                <p>02.&nbsp;&nbsp;&nbsp;BILLING INFORMATION</p>
+            </summary>
+            <div class="checkout_container">
+                <form action="" class="check_switch">
+                    <h4>
+                        Check as a guest or register
+                    </h4>
+                    <p>Register with us for future convenience</p>
+                    <div>
+                        <input type="radio" name="switch" id="switch1">
+                        <label for="switch1">checkout as guest</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="switch" id="switch2">
+                        <label for="switch2">register</label>
+                    </div>
+                    <h4>
+                        register and save time!
+                    </h4>
+                    <p>Register with us for future convenience</p>
+                    <p class="marked_text">Fast and easy checkout</p>
+                    <p class="marked_text">Easy access to your order history and status</p>
+                    <button type="submit">Continue</button>
+                </form>
+                <form action="" class="check_register">
+                    <h4>Already registed?</h4>
+                    <p>Please log in below</p>
+                    <h5>EMAIL ADDRESS<span> *</span></h5>
+                    <input type="email">
+                    <h5>PASSWORD<span> *</span></h5>
+                    <input type="password">
+                    <span>* Required Fileds</span>
+                    <div>
+                        <button>Log in</button>
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </details>
+        <details class="chekout_category">
+            <summary>
+                <p>03.&nbsp;&nbsp;&nbsp;SHIPPING INFORMATION</p>
+            </summary>
+            <div class="checkout_container">
+                <form action="" class="check_switch">
+                    <h4>
+                        Check as a guest or register
+                    </h4>
+                    <p>Register with us for future convenience</p>
+                    <div>
+                        <input type="radio" name="switch" id="switch1">
+                        <label for="switch1">checkout as guest</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="switch" id="switch2">
+                        <label for="switch2">register</label>
+                    </div>
+                    <h4>
+                        register and save time!
+                    </h4>
+                    <p>Register with us for future convenience</p>
+                    <p class="marked_text">Fast and easy checkout</p>
+                    <p class="marked_text">Easy access to your order history and status</p>
+                    <button type="submit">Continue</button>
+                </form>
+                <form action="" class="check_register">
+                    <h4>Already registed?</h4>
+                    <p>Please log in below</p>
+                    <h5>EMAIL ADDRESS<span> *</span></h5>
+                    <input type="email">
+                    <h5>PASSWORD<span> *</span></h5>
+                    <input type="password">
+                    <span>* Required Fileds</span>
+                    <div>
+                        <button>Log in</button>
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </details>
+        <details class="chekout_category">
+            <summary>
+                <p>04.&nbsp;&nbsp;&nbsp;SHIPPING METHOD</p>
+            </summary>
+            <div class="checkout_container">
+                <form action="" class="check_switch">
+                    <h4>
+                        Check as a guest or register
+                    </h4>
+                    <p>Register with us for future convenience</p>
+                    <div>
+                        <input type="radio" name="switch" id="switch1">
+                        <label for="switch1">checkout as guest</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="switch" id="switch2">
+                        <label for="switch2">register</label>
+                    </div>
+                    <h4>
+                        register and save time!
+                    </h4>
+                    <p>Register with us for future convenience</p>
+                    <p class="marked_text">Fast and easy checkout</p>
+                    <p class="marked_text">Easy access to your order history and status</p>
+                    <button type="submit">Continue</button>
+                </form>
+                <form action="" class="check_register">
+                    <h4>Already registed?</h4>
+                    <p>Please log in below</p>
+                    <h5>EMAIL ADDRESS<span> *</span></h5>
+                    <input type="email">
+                    <h5>PASSWORD<span> *</span></h5>
+                    <input type="password">
+                    <span>* Required Fileds</span>
+                    <div>
+                        <button>Log in</button>
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </details>
+        <details class="chekout_category">
+            <summary>
+                <p>05.&nbsp;&nbsp;&nbsp;PAYMENT METHOD</p>
+            </summary>
+            <div class="checkout_container">
+                <form action="" class="check_switch">
+                    <h4>
+                        Check as a guest or register
+                    </h4>
+                    <p>Register with us for future convenience</p>
+                    <div>
+                        <input type="radio" name="switch" id="switch1">
+                        <label for="switch1">checkout as guest</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="switch" id="switch2">
+                        <label for="switch2">register</label>
+                    </div>
+                    <h4>
+                        register and save time!
+                    </h4>
+                    <p>Register with us for future convenience</p>
+                    <p class="marked_text">Fast and easy checkout</p>
+                    <p class="marked_text">Easy access to your order history and status</p>
+                    <button type="submit">Continue</button>
+                </form>
+                <form action="" class="check_register">
+                    <h4>Already registed?</h4>
+                    <p>Please log in below</p>
+                    <h5>EMAIL ADDRESS<span> *</span></h5>
+                    <input type="email">
+                    <h5>PASSWORD<span> *</span></h5>
+                    <input type="password">
+                    <span>* Required Fileds</span>
+                    <div>
+                        <button>Log in</button>
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </details>
+        <details class="chekout_category">
+            <summary>
+                <p>06.&nbsp;&nbsp;&nbsp;ORDER REVIEW</p>
+            </summary>
+            <div class="checkout_container">
+                <form action="" class="check_switch">
+                    <h4>
+                        Check as a guest or register
+                    </h4>
+                    <p>Register with us for future convenience</p>
+                    <div>
+                        <input type="radio" name="switch" id="switch1">
+                        <label for="switch1">checkout as guest</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="switch" id="switch2">
+                        <label for="switch2">register</label>
+                    </div>
+                    <h4>
+                        register and save time!
+                    </h4>
+                    <p>Register with us for future convenience</p>
+                    <p class="marked_text">Fast and easy checkout</p>
+                    <p class="marked_text">Easy access to your order history and status</p>
+                    <button type="submit">Continue</button>
+                </form>
+                <form action="" class="check_register">
+                    <h4>Already registed?</h4>
+                    <p>Please log in below</p>
+                    <h5>EMAIL ADDRESS<span> *</span></h5>
+                    <input type="email">
+                    <h5>PASSWORD<span> *</span></h5>
+                    <input type="password">
+                    <span>* Required Fileds</span>
+                    <div>
+                        <button>Log in</button>
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </details>        
+    </div>
+    <div class="subscribe">
         <div class="container subscribe_block">
-            <figure class="subscribe_left_block">
+            <div class="subscribe_left_block">
                 <img src="img/portrait.png" alt="face" class="img_review">
                 <article class="review">
                     <p class="text_review">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
@@ -264,7 +405,7 @@
                         <div class="review_line"></div>
                     </div>
                 </article>
-            </figure>
+            </div>
             <div class="middle_line"></div>
             <div class="subscribe_right_block">
                 <h3 class="subscribe_title">SUBSCRIBE</h3>
@@ -275,7 +416,7 @@
                 </form>
             </div>
         </div>
-    </section>
+    </div>
     <footer>
         <div class="container">
             <div class="main_footer">
