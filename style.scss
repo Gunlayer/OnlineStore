@@ -213,7 +213,8 @@ body {
     border: 1px solid #ededed;
     position: absolute; 
     top: 45px;
-    left: -20px; 
+    left: -20px;
+    z-index: 150; 
 }
 .drop_cart::before {
     content: "";
@@ -358,6 +359,7 @@ body {
 .pop_up_menu {
     display: none;
     position: absolute;
+    z-index: 200;
     top: 51px;
     border-radius: 5px;
     background-color: #ffffff;
@@ -552,8 +554,10 @@ body {
     display: flex;
 }
 .link_card {
-    text-decoration: none;
-    margin-bottom: 39px;
+    text-decoration: none;    
+    cursor: pointer;
+    display: block;
+    padding-bottom: 21px;
 }
 .card:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
@@ -586,7 +590,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 0 0 21px 15px; 
+    margin: 0 0 0 15px; 
 }
 .button_middle {
     display: flex;
@@ -897,6 +901,7 @@ body {
 .slider_back {
     background-color: #f7f7f7;
     height: 777px;
+    position: relative;
 }
 .nav_wrapper {
     display: flex;
@@ -1052,6 +1057,7 @@ input[type=number] {
 }
 .product {
     margin-top: -100px;
+    position: relative;
 }
 .also_like {
     font-family: lato;
@@ -1067,3 +1073,4 @@ input[type=number] {
 @import "mixin.scss";
 @import "product.scss";
 @import "cart.scss";
+@import "checkout.scss";
